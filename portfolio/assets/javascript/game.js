@@ -11,8 +11,8 @@ $( document ).ready(function() {
 	var wins = 0;
 	var losses = 0;
 
-	$('#wins').html(wins);
-	$('#losses').html(losses);
+	$('#wins').html('Wins: ' + wins);
+	$('#losses').html('Losses: ' + losses);
 
 	console.log('in game.js');
 
@@ -20,13 +20,13 @@ $( document ).ready(function() {
 		matchNumber = Math.floor(Math.random() *101 + 19);
 		console.log(matchNumber);
 		$('#random-number-box').html(matchNumber);
-		redNumber = Math.floor(Math.random() *12);
-		console.log(redNumber);
-		blueNumber = Math.floor(Math.random() *12);
+		blueNumber = Math.floor(Math.random() *12 + 1);
 		console.log(blueNumber);
-		yellowNumber = Math.floor(Math.random() *12);
+		redNumber = Math.floor(Math.random() *12 + 1);
+		console.log(redNumber);
+		yellowNumber = Math.floor(Math.random() *12 + 1);
 		console.log(yellowNumber);
-		whiteNumber = Math.floor(Math.random() *12);
+		whiteNumber = Math.floor(Math.random() *12 + 1);
 		console.log(whiteNumber);
 		totalNumber = 0;
 		$('#total-score').html(totalNumber);
@@ -38,10 +38,10 @@ $( document ).ready(function() {
 
 	function checkWinOrLose() {
 		if (totalNumber == matchNumber) {
+			wins++;
 			console.log('you win');
 			$('#win-loss').html('You Win');
 			$('#wins').html( 'Wins: ' + wins);
-			wins = wins++;
 			//run code here to reset values
 			random();
 			totalNumber = 0;
@@ -63,7 +63,28 @@ $( document ).ready(function() {
 		checkWinOrLose();
 	});	
 
+	$('#red').on('click', function() {
+		//all the code that should run when the red button is clicked;
+		totalNumber = totalNumber + redNumber;
+		$('#total-score').html(totalNumber);
+		checkWinOrLose();
+	});	
 
+
+	$('#yellow').on('click', function() {
+		//all the code that should run when the blue uttoon is clicked;
+		totalNumber = totalNumber + yellowNumber;
+		$('#total-score').html(totalNumber);
+		checkWinOrLose();
+	});	
+
+
+	$('#white').on('click', function() {
+		//all the code that should run when the blue uttoon is clicked;
+		totalNumber = totalNumber + whiteNumber;
+		$('#total-score').html(totalNumber);
+		checkWinOrLose();
+	});	
 
 });
 
