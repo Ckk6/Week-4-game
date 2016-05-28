@@ -1,0 +1,91 @@
+h1 h2 h3 h4
+{
+	font-family: "Georgia","Times",Times New Roman,serif;
+}
+
+.o-row-adj1
+{
+		height: 80px;
+}
+
+.bg-image
+{
+	background-image: url("../images/Crystals.jpg");
+}
+.crystal-heading
+{
+padding: 5px;
+background:#d6d5f0;
+font-weight:bold;
+
+}
+
+.color
+ {
+ 	background:#d6d5f0;
+ }
+
+.center
+{
+	font-size: 25px;
+	margin-left:70px;
+	margin-top: 10px;
+
+}
+
+.o-row-adj2
+{
+		height: 221px;
+}
+
+#random-number-box
+{
+	height: 50px;
+	padding: 5px;
+	background:#d6d5f0;
+	font-weight:bold;
+	margin: 20px;
+	font-size: 35px;
+}
+
+#win-loss-box
+{
+		background:#d6d5f0;
+		font-weight:bold;
+		height: 100px;
+		margin: 20px;
+		padding: 5px;
+		font-size: 35px;
+
+}
+#win-loss
+{
+	
+}
+
+.o-row-adj3
+{
+	height: 150px;
+}
+.jewel
+{
+	height: 100px;
+	width: :50px;
+}
+
+#total-score
+{
+	font-size: 35px;
+	height: 100px;
+	background:#d6d5f0
+}
+
+.o-row-adj4
+{
+	height:120px;
+}
+
+.o-row-adj5
+{
+	height:55px;
+}

@@ -1,0 +1,131 @@
+<!doctype html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Crystal Collector</title>
+
+
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<link rel="stylesheet" type="text/css" href=" assets/css/reset.css"/>
+
+			
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+			<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+
+	</head>
+	
+
+	<body>		
+
+			<div class="container bg-image">
+				<div class="Row o-row-adj1">
+				<div class="col-md-4"></div>
+  			<div class="col-md-4 crystal-heading">
+  				<h1 class="center">
+  				Crystals Collector
+  				</h1>
+  			</div>
+ 				<div class="col-md-4"></div>
+ 			</div>
+ 					
+
+ 				<div class="Row o-row-adj2">
+ 					<div class="col-md-4"></div>
+ 					<div class="col-md-4 color" >
+
+ 						<h4>
+ 							You will be given a random number at the start of the game.
+ 						</h4>
+
+ 						<h4>
+ 							There are four crystals below.  By clicking on a crystal you will add a specific number of points to your total score.
+ 						</h4>
+
+ 						<h4>
+ 							The value of each crystal is hidden from you until you click on it.
+ 						</h4>
+ 					
+ 						<h4>
+ 							Each time when the game starts the game will change the values of each crystal.
+ 						</h4>
+
+ 				</div>
+ 				<div class="col-md-4"></div>
+ 			</div>	
+
+ 			<div class="Row o-row-adj3">
+ 					<div class="col-md-4"></div>
+ 					<div class="col-md-2 color" id="random-number-box">
+ 						
+ 					</div>
+ 					<div class="col-md-2" id="win-loss-box">
+ 						<h4 id="win-loss">You won</h4>
+ 						<h4 id= "wins">Wins: 3</h4>
+ 						<h4 id= "losses">Losses: 4</h4>
+ 					</div>
+ 					<div class="col-md-4" ></div>
+ 			</div>
+ 			
+ 			<div class="Row o-row-adj4">
+ 				<div class="col-md-2"></div>
+ 					<div class="col-md-2">
+ 						<button type="submit" id="blue"><img class="jewel"  src="assets/images/sapphire.jpg" alt="Submit"></button>
+ 					</div>
+
+ 					<div class="col-md-2">
+ 						<button type="submit" id="red"><img class="jewel" src="assets/images/Ruby-stone.jpg" alt="Submit"></button>
+ 					</div>
+
+ 					<div class="col-md-2">
+ 						<button type="submit" id="yellow"><img class="jewel" src="assets/images/download.jpg" alt="Submit"></button>
+ 					</div>
+
+ 					<div class="col-md-2">
+ 						<button type="submit" id="white"><img class="jewel" src="assets/images/clear.jpg" alt="Submit"></button>
+ 					</div>
+
+ 					<div class="col-md-2"></div>
+
+ 					
+
+ 			</div>
+
+ 			<div class="Row o-row-adj5">	
+ 				<div class="col-md-4"></div>
+ 				<div class="col-md-4">
+
+ 				<h4 class="crystal-heading">Your total score is: </h4>
+
+ 				</div>
+
+ 				<div class="col-md-4"></div>
+
+ 			</div>
+
+ 			<div class="Row ">	
+ 				<div class="col-md-4"></div>
+ 				<div class="col-md-4">
+
+ 				<h4 id="total-score"></h4>
+
+ 				</div>
+
+ 				<div class="col-md-4"></div>
+
+ 			</div>
+
+
+				
+			</div><!--container end-->
+
+
+			><!--add jquery cdn-->
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
+			<script type="text/javascript" src=assets/javascript/game.js></script>
+
+	</body>
+	</html>
